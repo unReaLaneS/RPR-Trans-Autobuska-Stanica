@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07C4E614-205E-45A4-A328-60F86EED0079}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zadaca3RPR</RootNamespace>
+    <AssemblyName>Zadaca3RPR</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1388868599_134138.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autobus.cs" />
+    <Compile Include="AutobusUnutra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutobusUnutra.Designer.cs">
+      <DependentUpon>AutobusUnutra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karta.Designer.cs">
+      <DependentUpon>Karta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Linije.cs" />
+    <Compile Include="PutnikKontrola.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PutnikKontrola.Designer.cs">
+      <DependentUpon>PutnikKontrola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sjediste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sjediste.Designer.cs">
+      <DependentUpon>Sjediste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stanica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stanica.Designer.cs">
+      <DependentUpon>Stanica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajPutnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajPutnika.Designer.cs">
+      <DependentUpon>DodajPutnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trans.cs" />
+    <Compile Include="Uredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uredi.Designer.cs">
+      <DependentUpon>Uredi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutobusUnutra.resx">
+      <DependentUpon>AutobusUnutra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karta.resx">
+      <DependentUpon>Karta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PutnikKontrola.resx">
+      <DependentUpon>PutnikKontrola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sjediste.resx">
+      <DependentUpon>Sjediste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stanica.resx">
+      <DependentUpon>Stanica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajPutnika.resx">
+      <DependentUpon>DodajPutnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Uredi.resx">
+      <DependentUpon>Uredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1388868599_134138.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DodajPutnikaKontrola\DodajPutnikaKontrola.csproj">
+      <Project>{B30CADCD-BBFB-4608-9903-FFD1CC6D3101}</Project>
+      <Name>DodajPutnikaKontrola</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

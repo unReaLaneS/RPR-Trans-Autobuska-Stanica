@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadaca3RPR", "Zadaca3RPR.csproj", "{07C4E614-205E-45A4-A328-60F86EED0079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DodajPutnikaKontrola", "..\DodajPutnikaKontrola\DodajPutnikaKontrola.csproj", "{B30CADCD-BBFB-4608-9903-FFD1CC6D3101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07C4E614-205E-45A4-A328-60F86EED0079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C4E614-205E-45A4-A328-60F86EED0079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C4E614-205E-45A4-A328-60F86EED0079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C4E614-205E-45A4-A328-60F86EED0079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30CADCD-BBFB-4608-9903-FFD1CC6D3101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30CADCD-BBFB-4608-9903-FFD1CC6D3101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30CADCD-BBFB-4608-9903-FFD1CC6D3101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30CADCD-BBFB-4608-9903-FFD1CC6D3101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
